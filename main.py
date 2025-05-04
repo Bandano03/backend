@@ -1,6 +1,7 @@
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.responses import FileResponse, JSONResponse
-from moviepy.editor import VideoFileClip, concatenate_videoclips, AudioFileClip, TextClip, CompositeVideoClip
+from moviepy.video.io.VideoFileClip import VideoFileClip
+from moviepy.editor import concatenate_videoclips, AudioFileClip, TextClip, CompositeVideoClip
 import openai
 import tempfile
 import os
